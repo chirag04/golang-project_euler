@@ -29,3 +29,10 @@ func TestP4(t *testing.T) {
 		t.Errorf(" largest palindrome made from the product of two 3-digit numbers = %v, want %v", x, out);
 	}
 }
+
+func TestP6(t *testing.T) {
+	const out = 25164150;
+	if x := P6(); x != out {
+		t.Errorf(" the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum = %v, want %v", x, out);
+	}
+}
