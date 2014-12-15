@@ -36,3 +36,10 @@ func TestP6(t *testing.T) {
 		t.Errorf(" the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum = %v, want %v", x, out);
 	}
 }
+
+func TestP9(t *testing.T) {
+	const out = 31875000;
+	if x := P9(); x != out {
+		t.Errorf(" the product abc = %v, want %v", x, out);
+	}
+}
