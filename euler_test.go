@@ -57,3 +57,10 @@ func TestP10(t *testing.T) {
 		t.Errorf(" the sum of all the primes below two million = %v, want %v", x, out);
 	}
 }
+
+func TestP12(t *testing.T) {
+	const out = 76576500;
+	if x := P12(); x != out {
+		t.Errorf(" the value of the first triangle number to have over five hundred divisors = %v, want %v", x, out);
+	}
+}
