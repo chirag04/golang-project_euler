@@ -37,6 +37,13 @@ func TestP6(t *testing.T) {
 	}
 }
 
+func TestP7(t *testing.T) {
+	const out = 104743;
+	if x := P7(); x != out {
+		t.Errorf(" the 10 001st prime number = %v, want %v", x, out);
+	}
+}
+
 func TestP9(t *testing.T) {
 	const out = 31875000;
 	if x := P9(); x != out {
