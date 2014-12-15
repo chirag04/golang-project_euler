@@ -43,3 +43,10 @@ func TestP9(t *testing.T) {
 		t.Errorf(" the product abc = %v, want %v", x, out);
 	}
 }
+
+func TestP10(t *testing.T) {
+	const out = 142913828922;
+	if x := P10(); x != out {
+		t.Errorf(" the sum of all the primes below two million = %v, want %v", x, out);
+	}
+}
