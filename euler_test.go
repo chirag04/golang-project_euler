@@ -71,3 +71,10 @@ func TestP13(t *testing.T) {
 		t.Errorf(" the first ten digits of the sum of the following one-hundred 50-digit numbers = %v, want %v", x, out);
 	}
 }
+
+func TestP14(t *testing.T) {
+	const out = 837799;
+	if x := P14(); x != out {
+		t.Errorf(" starting number, under one million, produces the longest chain = %v, want %v", x, out);
+	}
+}
