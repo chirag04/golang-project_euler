@@ -64,3 +64,10 @@ func TestP12(t *testing.T) {
 		t.Errorf(" the value of the first triangle number to have over five hundred divisors = %v, want %v", x, out);
 	}
 }
+
+func TestP13(t *testing.T) {
+	const out = 5537376230;
+	if x := P13(); x != out {
+		t.Errorf(" the first ten digits of the sum of the following one-hundred 50-digit numbers = %v, want %v", x, out);
+	}
+}
