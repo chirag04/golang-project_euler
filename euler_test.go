@@ -79,6 +79,13 @@ func TestP14(t *testing.T) {
 	}
 }
 
+func TestP16(t *testing.T) {
+	const out = 1366;
+	if x := P16(); x != out {
+		t.Errorf(" the sum of the digits of the number 2^1000 = %v, want %v", x, out);
+	}
+}
+
 func TestP20(t *testing.T) {
 	const out = 648;
 	if x := P20(); x != out {
