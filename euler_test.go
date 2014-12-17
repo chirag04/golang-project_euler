@@ -85,3 +85,10 @@ func TestP20(t *testing.T) {
 		t.Errorf(" the sum of the digits in the number 100! = %v, want %v", x, out);
 	}
 }
+
+func TestP21(t *testing.T) {
+	const out = 31626;
+	if x := P21(); x != out {
+		t.Errorf(" the sum of all the amicable numbers under 10000 = %v, want %v", x, out);
+	}
+}
