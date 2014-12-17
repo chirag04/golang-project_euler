@@ -99,3 +99,10 @@ func TestP21(t *testing.T) {
 		t.Errorf(" the sum of all the amicable numbers under 10000 = %v, want %v", x, out);
 	}
 }
+
+func TestP22(t *testing.T) {
+	const out = 871198282;
+	if x := P22(); x != out {
+		t.Errorf(" the total of all the name scores in the file = %v, want %v", x, out);
+	}
+}
