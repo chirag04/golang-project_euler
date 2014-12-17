@@ -4,6 +4,17 @@ import (
     "math"
 )
 
+func Gcd(x int, y int) int {
+    if x == 0 || y == 0 {
+        return x + y;
+    }
+    return Gcd(y, x%y);
+}
+
+func Lcm(x int, y int) int {
+    return x * y / Gcd(x, y);
+}
+
 func IsPrime(n int64) bool {
     length := Sqrt(n);
     for i := int64(2); i <= length; i++ {

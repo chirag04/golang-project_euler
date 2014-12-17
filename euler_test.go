@@ -30,6 +30,13 @@ func TestP4(t *testing.T) {
 	}
 }
 
+func TestP5(t *testing.T) {
+	const out = 232792560;
+	if x := P5(); x != out {
+		t.Errorf(" the smallest positive number that is evenly divisible by all of the numbers from 1 to 20 = %v, want %v", x, out);
+	}
+}
+
 func TestP6(t *testing.T) {
 	const out = 25164150;
 	if x := P6(); x != out {
