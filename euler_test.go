@@ -78,3 +78,10 @@ func TestP14(t *testing.T) {
 		t.Errorf(" starting number, under one million, produces the longest chain = %v, want %v", x, out);
 	}
 }
+
+func TestP20(t *testing.T) {
+	const out = 648;
+	if x := P20(); x != out {
+		t.Errorf(" the sum of the digits in the number 100! = %v, want %v", x, out);
+	}
+}
