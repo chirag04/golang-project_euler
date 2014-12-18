@@ -51,6 +51,13 @@ func TestP7(t *testing.T) {
 	}
 }
 
+func TestP8(t *testing.T) {
+	const out = 23514624000;
+	if x := P8(); x != out {
+		t.Errorf(" the thirteen adjacent digits in the 1000-digit number that have the greatest product = %v, want %v", x, out);
+	}
+}
+
 func TestP9(t *testing.T) {
 	const out = 31875000;
 	if x := P9(); x != out {
