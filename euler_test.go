@@ -100,6 +100,13 @@ func TestP16(t *testing.T) {
 	}
 }
 
+func TestP18(t *testing.T) {
+	const out = 1074;
+	if x := P18(); x != out {
+		t.Errorf(" the maximum total from top to bottom of the triangle = %v, want %v", x, out);
+	}
+}
+
 func TestP20(t *testing.T) {
 	const out = 648;
 	if x := P20(); x != out {
